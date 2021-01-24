@@ -1,50 +1,62 @@
 const express = require('express'),
+  bodyParser = require('body-parser'),
   morgan = require('morgan');
 
 const app = express();
 app.use(morgan('common'));
 app.use(express.static('public'));
+app.use(bodyParser.json());
 
 let topMovies = [
     {
       title: 'Harry Potter and the Prisoner of Azkaban',
       director: 'Alfonso Cuaron'
+      // genre: 'Fantasy'
     },
     {
       title: 'The Dark Knight',
       director: 'Christopher Nolan'
+      // genre: 'Action'
     },
     {
       title: '8 Mile',
       director: 'Curtis Hanson'
+      // genre: 'Drama'
     },
     {
       title: 'Focus',
       director: 'Glenn Ficarra'
+      // genre: 'Romance'
     },
     {
       title: 'Ready Player One',
       director: 'Steven Spielberg'
+      // genre: 'Sci-fi'
     },
     {
       title: 'Back to the Future II',
       director: 'Steven Spielberg'
+      // genre: 'Sci-fi'
     },
     {
       title: 'Jurassic Park',
       director: 'Steven Spielberg'
+      // genre: 'Action'
     },
     {
       title: 'Toy Story',
       director: 'John Lasseter'
+      // genre: 'Animation'
     },
     {
       title: 'The Breakfast Club',
       director: 'John Hughes'
+      // genre: 'Drama'
     },
     {
       title: 'Southpaw',
       director: 'Antoine Fuqua'
+      // genre: 'Drama'
     }
   ];
 
