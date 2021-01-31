@@ -69,6 +69,59 @@
             <td>{<br>"Name": "Martin Scorsese.",<br>"Bio": "Martin Charles Scorsese is an American film director, producer, screenwriter, and actor.",<br>"Birth": "1942.",<br>"Death": "-"<br>}</td>
           </tr>
           <tr>
+            <td>Return data about a director by name</td>
+            <td>/movies/Users/:Name</td>
+            <td>GET</td>
+            <td>None</td>
+            <td>/movies/Users/Ashley</td>
+            <td>JSON</td>
+            <td>
+              {
+              "FavoriteMovies": [
+                  "600f9d261e76bb4ca19b8abf",
+                  "600f9c1a1e76bb4ca19b8abe"
+              ],
+              <br>
+              "Username": "Ashley",
+              "Password": "Oldf11544",
+              "Email": "Ashly@gmail.com",
+              "Birthday": "1994-11-22T05:00:00.000Z"
+              }
+            </td>
+          </tr>
+          <tr>
+            <td>Return data about all users</td>
+            <td>/movies/users</td>
+            <td>GET</td>
+            <td>None</td>
+            <td>/movies/users</td>
+            <td>JSON</td>
+            <td>    
+              "FavoriteMovies": [
+                  "600f8aa71e76bb4ca19b8ab7",
+                  "600f8aa71e76bb4ca19b8ab7"
+              ],
+            <br>
+              "Username": "Adam",
+              "Password": "Ad135",
+              "Email": "Adam@gmail.com",
+              "Birthday": "1990-04-12T00:00:00.000Z"
+            },
+            <br>
+            {
+              "FavoriteMovies": [
+                  "600f9d261e76bb4ca19b8abf",
+                  "600f9c1a1e76bb4ca19b8abe"
+              ],
+            <br>
+              "Username": "Ashley",
+              "Password": "Oldf11544",
+              "Email": "Ashly@gmail.com",
+              "Birthday": "1994-11-22T05:00:00.000Z"
+            }
+            </td>
+            </tr>
+            <tr>
             <td>Allow new users to register</td>
             <td>/users</td>
             <td>POST</td>

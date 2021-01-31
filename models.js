@@ -9,10 +9,7 @@ let movieSchema = mongoose.Schema({
     Director: {
       Name: String,
       Bio: String
-    },
-    Actors: [String],
-    ImagePath: String,
-    Featured: Boolean
+    }
   });
   
   let userSchema = mongoose.Schema({
@@ -29,10 +26,10 @@ let movieSchema = mongoose.Schema({
   });
 
   let directorSchema = mongoose.Schema({
-      Name: { type: String, required: true },
-      Bio: { type: String, required: true },
-      Birth: { type: String, required: true },
-      Death: { type: String, required: null }
+    Name: { type: String, required: true },
+    Bio: { type: String, required: true },
+    Birth: { type: String, required: true },
+    Death: { type: String, required: null }
   });
   
   let Movie = mongoose.model('Movie', movieSchema);
@@ -41,6 +38,6 @@ let movieSchema = mongoose.Schema({
   let Director = mongoose.model('Director', directorSchema);
   
   module.exports.Movie = Movie;
-  module.exports.User = User;
+  module.exports.User = User; 
   module.exports.Genre = Genre;
   module.exports.Director = Director;
