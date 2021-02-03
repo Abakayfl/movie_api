@@ -28,7 +28,9 @@
     "lodash": "^4.17.20",
     "mongoose": "^5.11.13",
     "morgan": "^1.10.0",
-    "passport": "^0.4.1"
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^7.17.0"
