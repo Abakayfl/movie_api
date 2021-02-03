@@ -24,7 +24,7 @@ require('./passport');
 
 const cors = require('cors');
 
-let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'
+let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'https://my-flix1.herokuapp.com'
 ];
 
 const { check, validationResult } = require('express-validator');
