@@ -9,23 +9,14 @@ application will provide users with access to information about different movies
 * REST architecture with URL endpoints
 * Body-parser package for reading data from requests and morgan logging
 * MongoDB + Mongoose + JSON 
+* Database built using MongoDB
+* Information provided in JSON format
 * Postman for testing
 * Authentication and authorization
-* Heroku - cloud application platform
+* Heroku - Deployment
 * Data security and validation logic
 
-## Development server
+## Documentation
+JSDoc documentation can be found in the "out" directory. Additional details regarding API endpoints and request/response information can be found in the documentation.html file in the "public" directory.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component.
-
-## Build the App
-
-Run `ng build` to build the project.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via
+See the index.js file for the logic regarding to each API endpoint.
