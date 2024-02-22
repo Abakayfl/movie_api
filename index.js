@@ -30,7 +30,7 @@ let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://lo
 const { check, validationResult } = require('express-validator');
 
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://abakayfl.github.io/myFlix-Angular-client");
+  res.header("Access-Control-Allow-Origin", "https://abakayfl.github.io/myFlix-Angular-client/welcome");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.header("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, OPTIONS");
   return next();
